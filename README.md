@@ -1,3 +1,5 @@
 # web-Portfolio
 
-This is the Web Portfolio i made for myself.
+This is the Web Portfolio I made for myself.
+
+HTML & CSS are used.
