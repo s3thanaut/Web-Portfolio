@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+
+*{
+    --background: #1e2027;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", "Ubuntu";
+
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
+body{
+    background:var(--background);
+    color: #f8f8f8;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    background-color: var(--background);
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 5%;
+    box-shadow: 0 5px 20px #121316;
+
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #f8f8f8;
+    text-decoration: none;
+	list-style-type: upper-alpha;
+}
+
+em {
+    color:rgba(0, 151, 245, 1);
+    font-style: none;
+}
+
+.logo {
+    margin-right: auto;
+}
+.logo a{
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.links li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.links li a {
+    transition: all 300ms ease;
+}
+
+.links li a:hover {
+    color: #0096f3;
+}
+
+button {
+    padding: 10px 20px;
+    background: rgba(0, 151, 245, 1);
+    border: none;
+    border-radius: 50px;
+    margin-left: 20px;
+    cursor: pointer;
+
+    transition: scale 300ms ease;
+}
+
+button:hover {
+    scale: 1.1;
+}
+
+button:active {
+    background: rgba(0, 151, 245, 0.75)
+}
+
+.bio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+
+.bio span {
+    max-width: 60ch;
+    padding: 20px;
+    background-color: #121316;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #00000066, -5px -5px 5px #8c8fa744;
+}
+
+.bio img {
+    width: 300px;
+    height: 300px;
+    border: solid 10px #121316;
+    border-radius: 50%;
+    box-shadow: 0 0 20px black;
+}
+
+.skills {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillcards {
+    display: flex;
+    align-items: center;
+}
+
+.skillcards span {
+    width: 15vw;
+    height: 18vw;
+    margin: 20px;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1ch;
+
+    transition: all 300ms ease;
+}
+
+.skillcards span:hover {
+    box-shadow: 5px 5px 10px #00000055, -5px -5px 5px #8c8fa755;
+}
+.skillcards img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+}
+
+form {
+    background-color: #121316;
+    padding: 2rem;
+}
+
+.datainputs {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.datainputs img  {
+    position: absolute;
+    left: 5%;
+    width: 15vw;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+input, textarea {
+    color: white;
+    font-size: 1.2rem;
+    background: var(--background);
+    width: 50vw;
+    padding: 10px;
+    border: none;
+    border-radius: 1.2rem;
+    box-shadow: 3px 3px 10px #00000055, -3px -3px 5px #8c8fa755;
+
+    transition: all 300ms ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: -3px -3px 5px #8c8fa755 inset, 3px 3px 10px #00000055 inset;
+}
+
+@media (max-width: 640px){
+    nav {
+        visibility: hidden; 
+    }
+
+    .logo a{
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+    .bio {
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .bio img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .bio span {
+        margin: 2ch;
+    }
+
+    .skillcards {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .skillcards span {
+        width: 70vw;
+        height: 75vw;
+        margin: 1ch;
+    }
+}
